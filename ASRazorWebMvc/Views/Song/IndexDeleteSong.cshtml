@@ -1,0 +1,12 @@
+﻿@using Domain;
+
+@model Song
+<form action="https://localhost:44337/Song/Delete" method="post">
+
+    <h1>Delete Song By Id</h1>
+
+    <h3>Song Id</h3>
+    <input name="SongId" value="@Model.SongId" />
+
+    <input type="submit" />
+</form>

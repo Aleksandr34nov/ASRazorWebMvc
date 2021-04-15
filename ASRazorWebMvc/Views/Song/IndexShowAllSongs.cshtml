@@ -1,0 +1,30 @@
+﻿@using Domain;
+
+@model List<Song>
+@{
+    ViewData["Title"] = "IndexShowAllSongs Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>
+                    <h3>SongTitle = @item.SongTitle</h3>
+                    <ul>
+                        <li>
+                            <h3>SongId = @item.SongId</h3>
+                        </li>
+                        <li>
+                            <h3>SongTitle = @item.SongTitle</h3>
+                        </li>
+                        <li>
+                            <h3>AlbumId = @item.AlbumId</h3>
+                        </li>
+                    </ul>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

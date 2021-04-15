@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <ul>
+            <li>
+                <h2>
+                    <a asp-action="IndexShowAllSongs" asp-controller="Song">Show all songs</a>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    <a asp-action="IndexGetSongById" asp-controller="Song">Show song by id</a>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    <a asp-action="IndexAddSong" asp-controller="Song">Add song</a>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    <a asp-action="IndexDeleteSong" asp-controller="Song">Delete song</a>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    <a asp-action="IndexFindForUpdateSong" asp-controller="Song">Update song</a>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    <a asp-action="IndexShowAllAlbums" asp-controller="Album">Show all albums</a>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    <a asp-action="IndexGetAlbumById" asp-controller="Album">Show album by id</a>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    <a asp-action="IndexAddAlbum" asp-controller="Album">Add album</a>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    <a asp-action="IndexDeleteAlbum" asp-controller="Album">Delete album</a>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    <a asp-action="IndexFindForUpdateAlbum" asp-controller="Album">Update album</a>
+                </h2>
+            </li>
+        </ul>
+    </div>
+</div>

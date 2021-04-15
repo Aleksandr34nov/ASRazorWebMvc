@@ -1,0 +1,12 @@
+﻿@using Domain;
+
+@model Song
+<form action="https://localhost:44337/Song/AddSong" method="post">
+
+    <h1>Add Song</h1>
+
+    <input name="SongId" type="hidden" value="@Model.SongId" />
+    <input name="SongTitle" value="@Model.SongTitle" />
+    <input name="AlbumId" value="@Model.AlbumId" />
+    <input type="submit" />
+</form>

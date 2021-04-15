@@ -1,0 +1,26 @@
+﻿@using Domain;
+
+@model Album
+@{
+    ViewData["Title"] = "GetAlbumById Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <ul>
+            <h3>AlbumTitle: @Model.Title, @Model.Artist</h3>
+            <ul>
+                @if (Model.SongList != null)
+                {
+                    foreach (var subItem in Model.SongList)
+                    {
+                        <li>
+                            <a asp-action="IndexUpdateSong" asp-controller="Song" asp-route-sng=subItem>@subItem.SongTitle</a>
+                        </li>
+                    }
+                }
+            </ul>
+            <a asp-action="Index" asp-controller="Home">Return</a>
+        </ul>
+    </div>
+</div>

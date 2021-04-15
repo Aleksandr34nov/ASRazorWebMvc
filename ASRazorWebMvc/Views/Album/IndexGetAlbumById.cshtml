@@ -1,0 +1,12 @@
+﻿@using Domain;
+
+@model Album
+<form action="https://localhost:44337/Album/GetAlbumById" method="post">
+
+    <h1>Get Album By Id</h1>
+
+    <h3>Album Id: </h3>
+    <input name="AlbumId" value="@Model.AlbumId" />
+
+    <input type="submit" />
+</form>
